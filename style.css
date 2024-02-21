@@ -1,0 +1,102 @@
+[14:50] Davi Sousa
+/**
+Folha de estilo Ferrari
+@author Davi Sousa
+*/
+/* Importar fonts */
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+ 
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Kode+Mono:wght@400..700&display=swap');
+ 
+
+/* variaveis globais */
+:root{
+
+}
+
+#social{
+    
+}
+
+/* CSS RESET */
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+ 
+/* LAYOUT */
+ 
+html {
+    scroll-behavior: smooth;
+}
+ 
+ 
+body{
+    font-family: "Open Sans", sans-serif;
+    font-size: 1em;
+}
+ 
+.Conteiner {
+    margin: 0 auto;
+    padding: 50px 15px 50px 15px;
+}
+.Flex {
+    display: flex;
+}
+ 
+/* Smartphone portrait >>>>>>>>>>>>>>>>>>>>>>>>>>> */
+ 
+/* FOOTER */
+#footer {
+    background-color: plum;
+}
+ 
+/* Smartphone landscape >>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@media(min-width: 576px){
+    body {
+        background-color: pink;
+    }
+}
+ 
+/* Tablet portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@media(min-width: 768px){
+    .Conteiner {
+        max-width: 540px;
+        background-color: hotpink;
+    }
+}
+ 
+/* Tablet landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@media(min-width: 992px){
+    .Conteiner {
+        max-width: 960px;
+        background-color: pink;
+    }
+}
+ 
+/*  Pcs ou notebooks HD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+@media(min-width: 1280px){
+    .Conteiner {
+        max-width: 1140px;
+        background-color: pink;
+    }
+    .Flex {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #social {
+        background-color: hotpink;
+    }
+    #copyright {
+        background-color: black;
+    }  
+}
+ 
+/* Pcs ou notebooks TV Full HD + >>>>>>>>>>>>>>>>>>>>> */
+@media(min-width: 1360px){
+    .Conteiner {
+ 
+    }
+}
